@@ -66,7 +66,7 @@ export class FuelUtils {
 
             await this.page.getByPlaceholder('Amount to purchase').click();
             await this.page.getByPlaceholder('Amount to purchase').press('Control+a');
-            await this.page.getByPlaceholder('Amount to purchase').fill('2000000');
+            await this.page.getByPlaceholder('Amount to purchase').fill('1000000');
             await this.page.getByRole('button', { name: ' Purchase' }).click();
 
             console.log('Bought Fuel Successfully! Amount of fuel bought: 2000000 Litres');
