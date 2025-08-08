@@ -19,8 +19,8 @@ export class CampaignUtils {
         if(!isEcoFriendExists) {
             await this.page.getByRole('button', { name: ' New campaign' }).click();
             await this.page.getByRole('cell', { name: 'Eco-friendly Increases' }).click();
-            await page.waitForSelector('role=button[name="$"]', { timeout: 10000 });
-            await page.click('role=button[name="$"]');
+            await this.page.waitForSelector('role=button[name="$"]', { timeout: 10000 });
+            await this.page.click('role=button[name="$"]');
             console.log("Eco Friendly Campaign Created Successfully!");
         }
 
